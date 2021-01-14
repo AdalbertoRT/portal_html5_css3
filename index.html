@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portal ART</title>
+		<meta charset="utf-8" />
+		<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no" />
+		<link rel="shortcut icon" type="image/x-png" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</head>
+	<body>
+		
+		<div class="topo" id="topo">
+			<div class="containerTopo">
+				<div class="topoLeft">
+					<ul>
+						<li><a href="index.html" class="ativo">Home</a></li>
+						<li><a href="#">Quem Somos</a></li>
+						<li><a href="flexbox.html">Anuncie Aqui</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
+				</div>
+				<div class="topoRight">
+					<input type="image"  src="assets/images/lupa.png" name="imagemBusca" border="0" width="26" height="26" />
+					<input type="search" name="busca" id="topoBusca" placeholder="Busca..." />					
+					<a href="#"><img src="assets/images/youtube.png" border="0" width="26" height="26" /></a>
+					<a href="#"><img src="assets/images/twitter.png" border="0" width="26" height="26" /></a>
+					<a href="#"><img src="assets/images/facebook.png" border="0" width="26" height="26" /></a>
+					<a href="#"><img src="assets/images/google_plus.png" border="0" width="26" height="26" /></a>
+					<a href="#"><img src="assets/images/rss3.png" border="0" width="26" height="26" /></a>
+				</div>
+            </div>
+		</div>
+		
+		<div class="topo2">
+			<div class="containerTopo2">
+				<div class="logo">
+					<img src="assets/images/logo.png" width="230">
+				</div>
+				<div class="banner">
+					<!--<marquee behavior="alternate" scrolldelay="45" truespeed>PUBLICIDADE 728 X 90px</marquee>-->
+					<span>PUBLICIDADE</span>	
+				</div>
+			</div>
+		</div>
+		
+		<div class="menu">
+			<div class="containerMenu">
+				<img src="assets/images/menuMobile.png" border="0" width="40" height="40" class="menuMobile" onclick="toggleMenu()">
+				<ul id="menu">
+					<li><a href="index.html" class="ativo">Home</a></li>
+					<li><a href="index.html">Economia</a></li>
+					<li>
+						<a href="index.html">Entretenimento <span>&#9662</span></a>
+						<div class="submenu">
+							<ul>
+								<li>
+									<a href="#">SubmenuItem 1</a>
+									<div class="subitem">
+										<ul>
+											<li><a href="#">001</a></li>
+											<li><a href="#">002</a></li>
+											<li><a href="#">003</a></li>
+											<li><a href="#">003</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">SubmenuItem 2</a></li>
+								<li><a href="#">SubmenuItem 3</a></li>
+								<li><a href="#">SubmenuItem 4</a></li>
+								<li><a href="#">SubmenuItem 5</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="index.html">Esportes <span>&#9662</span></a>
+						<div class="submenu">
+							<ul>
+								<li><a href="#">SubmenuItem 1</a></li>
+								<li>
+									<a href="#">SubmenuItem 2</a>
+									<div class="subitem">
+										<ul>
+											<li><a href="#">001</a></li>
+											<li><a href="#">002</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">SubmenuItem 3</a></li>
+								<li><a href="#">SubmenuItem 4</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="index.html">Geral</a></li>
+					<li>
+						<a href="index.html">Notícias <span>&#9662</span></a>
+						<div class="submenu">
+							<ul>
+								<li><a href="#">SubmenuItem 1</a></li>
+								<li><a href="#">SubmenuItem 2</a></li>
+								<li>
+									<a href="#">SubmenuItem 3</a>
+									<div class="subitem">
+										<ul>
+											<li><a href="#">001</a></li>
+											<li><a href="#">002</a></li>
+											<li><a href="#">003</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="index.html">Polícia</a></li>
+					<li><a href="index.html">Vídeos</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="ultimasNoticias">
+			<div class="containerUN">
+				<div class="boxUN">
+					<div id="boxLeft">
+						<span>ULTIMAS NOTÍCIAS</span>
+					</div>
+					<div id="boxRight">
+						<span>Estou me tornando um programador web!</span>
+						<span>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="conteudo">
+			<div class="containerConteudo">
+
+				<div class="leftSide">
+					<div class="slideshow" id="slideshow">
+						<div class="slideBolinhas">
+							<div class="bolinha" onclick="mudarSlide(0)"></div>
+							<div class="bolinha" onclick="mudarSlide(1)"></div>
+							<div class="bolinha" onclick="mudarSlide(2)"></div>
+							<div class="bolinha" onclick="mudarSlide(3)"></div>
+						</div>
+						<div class="slideshowArea" id="slideshowArea">
+							<div class="slide" style="background-image: url(assets/images/luta335px.jpg);">
+								<div class="slideInfo">
+									<div class="slideInfoTitulo">
+										<h1>Titulo de teste</h1>
+									</div>
+									<div class="slideInfoSubtitulo">
+										<h3>Subtitulo de teste.</h3>
+									</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image: url(assets/images/Barack-Obama335px.jpg);">
+								<div class="slideInfo">
+									<div class="slideInfoTitulo">
+										<h1>Titulo de teste 2</h1>
+									</div>
+									<div class="slideInfoSubtitulo">
+										<h3>Subtitulo de teste 2.</h3>
+									</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image: url(assets/images/jogo335px.jpg);">
+								<div class="slideInfo">
+									<div class="slideInfoTitulo">
+										<h1>Titulo de teste 3</h1>
+									</div>
+									<div class="slideInfoSubtitulo">
+										<h3>Subtitulo de teste 3.</h3>
+									</div>
+								</div>
+							</div>
+							<div class="slide" style="background-image: url(assets/images/quadrilha335px.jpg);">
+								<div class="slideInfo">
+									<div class="slideInfoTitulo">
+										<h1>Titulo de teste 4</h1>
+									</div>
+									<div class="slideInfoSubtitulo">
+										<h3>Subtitulo de teste 4.</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="widget">
+						<div class="widgetTitle">
+							NOTÍCIAS
+						</div>
+						<div class="widgetConteudo">
+
+							<div class="noticiaArea1">
+							<div class="noticiaImagem">
+									<img src="assets/images/Barack-Obama335px.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+							</div>
+
+							<div class="noticiaArea2">
+								<div class="noticiaImagem">
+									<img src="assets/images/morena.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+
+								<div class="noticiaImagem">
+									<img src="assets/images/Vint-Cerf.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+
+								<div class="noticiaImagem">
+									<img src="assets/images/quadrilha335px.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+							</div>
+							<div style="clear: both;"></div>
+						</div> 
+					</div>
+
+					<div class="widget">
+						<div class="widgetTitle">
+							ESPORTES
+						</div>
+						<div class="widgetConteudo">
+
+							<div class="noticiaArea1">
+								<div class="noticiaImagem">
+										<img src="assets/images/jogo.jpg" border="0">
+								</div>
+									<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+
+							</div>
+							<div class="noticiaArea2">
+								<div class="noticiaImagem">
+									<img src="assets/images/luta335px.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+
+								<div class="noticiaImagem">
+									<img src="assets/images/girl.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+
+								<div class="noticiaImagem">
+									<img src="assets/images/jogo.jpg" border="0">
+								</div>
+								<div class="noticiaTitulo">
+									Título de exemplo de uma noticia com conteudo qualquer.
+								</div>
+								<div class="noticiaInfo">
+									<span class="postData">Postado a 2 dias</span>
+									<span class="comentarios">500 Comentários</span>
+								</div>
+							</div>
+							<div style="clear: both;"></div>
+						</div> 
+					</div>
+
+				</div>
+
+				<div class="rightSide">
+					<div class="widget">
+						<div class="widgetTitle">
+							SOCIAL
+						</div>
+						<div class="widgetConteudo">
+							
+							<a href="#"><img src="assets/images/rss3.png" border="0" width="26" height="26" /></a>
+							<a href="#"><img src="assets/images/google_plus.png" border="0" width="26" height="26" /></a>
+							<a href="#"><img src="assets/images/facebook.png" border="0" width="26" height="26" /></a>
+							<a href="#"><img src="assets/images/twitter.png" border="0" width="26" height="26" /></a>
+							<a href="#"><img src="assets/images/youtube.png" border="0" width="26" height="26" /></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widgetTitle">
+							ULTIMAS NOTÍCIAS
+						</div>
+						<div class="widgetConteudo">
+							<p class="noticiaItem">
+								<a href="#">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</a>
+							</p>
+							<p class="noticiaItem">
+								<a href="#">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</a>
+							</p>
+							<p class="noticiaItem">
+								<a href="#">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</a>
+							</p>
+							<p class="noticiaItem">
+								<a href="#">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</a>
+							</p>
+							<p class="noticiaItem">
+								<a href="#">É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.</a>
+							</p>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widgetTitle">
+							PUBLICIDADE
+						</div>
+						<div class="widgetConteudo">
+							<a href="#"><img src="assets/images/girl.jpg" border="0" width="275" /></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widgetTitle">
+							ENCONTRE-NOS NO FACEBOOK
+						</div>
+						<div class="widgetConteudo">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frockabellos&tabs&width=275&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="275" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footerInt">
+				<div id="direitos"><h5>Desenvolvido por Adalberto R. Teixeira</h5><br>
+				<h5>Todos os Direitos Reservados</h5></div>
+				<div id="top" onclick="topFunction()" title="Ir para o Topo"><a href="#topo"><sup>&#8682</sup> TOPO <sup>&#8682</sup></a></div>
+			</div>
+		</footer>
+
+	</body>
+</html>
